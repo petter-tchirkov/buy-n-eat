@@ -1,0 +1,57 @@
+/* src/assets/styles/base/_fonts.scss  */
+
+/*
+  Quicksand
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,400;1,900&display=swap');
+
+
+@font-face {
+  font-family: 'Averta-Black';
+  font-weight: 900;
+  src: url('@~fonts/Averta-Black.woff');
+}
+
+@font-face {
+  font-family: 'Averta-Bold';
+  font-weight: 700;
+  src: url('@~fonts/Averta-Bold.woff');
+}
+
+@font-face {
+  font-family: 'Averta-ExtraBold';
+  font-weight: 800;
+  src: url('@~fonts/Averta-ExtraBold.woff');
+}
+
+@font-face {
+  font-family: 'Averta-SemiBold';
+  font-weight: 600;
+  src: url('@~fonts/Averta-SemiBold.woff');
+}
+
+@font-face {
+  font-family: 'Averta-Regular';
+  font-weight: 400;
+  src: url('@~fonts/Averta-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Handelson-ThreeCYR';
+  font-weight: 400;
+  src: url('@~fonts/Handelson-ThreeCYR.woff');
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  font-weight: 400;
+  src: url('@~fonts/Lato-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Lato-Medium';
+  font-weight: 400;
+  src: url('@~fonts/Lato-Medium.ttf');
+}

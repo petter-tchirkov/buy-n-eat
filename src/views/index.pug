@@ -1,0 +1,136 @@
+extends ./layouts/master.pug
+
+block title
+  title My Page - Home
+
+block manifestBrowserconfigFiles
+  link(href='../manifest.json', rel='manifest')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  // Menu
+  +menu('home')
+
+  //- Desktop page
+  section.main
+    .main--container.container
+      .main--content
+        span.prescription.text-center.text-md-left Предлагаем
+        h2.main--title.text-center уникальные условия
+        span.prescription.text-center.text-md-right для первых покупателей
+        button.main--btn Узнать подробнее
+  section.features
+    .features--container.container
+      .features--header
+        .features--logo
+          img(src="/assets/images/10.svg", alt="")
+        h2.features--title сеть современных супермаркетов,
+          span сочетающих в себе актуальные тренды ритейла и домашний уют.
+      .features--item
+        img(src="/assets/images/food.png", alt="")
+        .features--content
+          h2.prescription Кулинария
+          p Мы используем современное оборудование и натуральные фермерские продукты. 
+          p Уверены, что каждый покупатель найдет в нашей "Кулинарии" любимое блюдо, а наш шеф-повар станет лучшим другом и надежным помощником!
+      .features--item
+        .features--content
+          h2.prescription Местные фермеры
+          p Работа нашей торговой сети невозможна без сотрудничества с местными поставщиками и фермерами. Только в партнерстве мы сможем достичь поставленной цели - наполнить прилавки сети 
+          p "Купи и съешь!" качественными и свежими продуктами. Главные принципы нашей работы - это прозрачность и гибкость в работе с поставщиками.
+        img(src="/assets/images/basket.png", alt="")
+  section.club
+    .club--container.container
+      h2.club--title Не упустите возможность получить 
+      h3.club--subtitle Лимитированную клубную карту
+      .club--content
+        .club--column.col-lg-4
+          .club--item
+            img(src="/assets/images/piggy-bank.svg", alt="")
+            p Повышенный кэшбэк на кулинарию и покупки
+          .club--item
+            img(src="/assets/images/cookie.svg", alt="")
+            p Возможность принимать 
+              br
+              | участие в дегустациях 
+              br
+              | кулинарии
+          .club--item
+            img(src="/assets/images/giftbox.svg", alt="")
+            p Увеличенная скидка на День Рождения
+            span (На всех в семье из 5 человек!)
+        .club--card.col-lg-4
+          img(src="/assets/images/card.png", alt="")
+        .club--column.col-lg-4
+          .club--item
+            img(src="/assets/images/discount.svg", alt="")
+            p Повышенная утренняя скидка
+          .club--item
+            img(src="/assets/images/coffee-cup.svg", alt="")
+            p каждые 3500 ₽ в чеке– чашка кофе в подарок 
+            span (классический Американо)
+          .club--item
+            img(src="/assets/images/chef-hat.svg", alt="")
+            p Бесплатное участие в детских кулинарных шоу
+  section.booking
+    .booking--container.container
+      form.booking--form(action="#")
+        input(type="text" placeholder="Имя")
+        input(type="text" placeholder="Телефон")
+        button Забронировать
+      .booking--cta Условия получения такой карты просты! Оставь свой номер и забронируй её для себя
+  section.mission
+    .mission--container.container
+      .mission--content
+        .mission--photo
+          img(src="/assets/images/1.png")
+        .mission--text
+          .mission--img
+            img(src="/assets/images/7.svg")
+          p 
+            span Наша миссия 
+            | заключается в том, чтобы, приходя в супермаркет, вы 
+            span легко находили любимые продукты 
+            | для семейного ужина или покупали уже готовое блюдо, а 
+            span свободное время 
+            | тратили 
+            span на близких людей.
+          .mission--background
+          .mission--name 
+            span Руководитель, Яна Демидова
+  section.activate
+    .activate--container.container
+      h2.activate--title Забронировал уникальную карту? 
+      .activate--subtitle Рассказываем, как её активировать:
+      .activate--content
+        .activate--item
+          .activate--img
+            img(src="/assets/images/laugh.svg")
+          .activate--text Приведи двух друзей, знакомых или родственников
+        .activate--divider ИЛИ
+        .activate--item
+          .activate--img
+            img(src="/assets/images/grocery.svg")
+          .activate--text Приобрети товары на общую сумму N рублей
+      button.activate--btn Забронировать
+  section.bonus
+    .bonus--container.container
+      h2.bonus--title С нашей бонусной картой - 
+        span удобно!
+      .bonus--content
+        .bonus--img
+          img(src="/assets/images/phone-card.png")
+        .bonus--text
+          h3.where Она находится в вашем телефоне, и вы никогда её не потеряете!
+          span.ps * Бонусная и лимитированная
+          h3.later А можно будет потом получить бонусную карту?
+          .yes Да...
+            br
+            | Но не такую крутую! Лимитированная карта будет доступна только по бронированию, а так же в день открытия нашего супермаркета
+  section.last-chance
+    .last-chance--container.container
+      h2.last-chance--title Передумал? лови еще один шанс!
+      form.last-chance--form(action="#")
+          input(type="text" placeholder="Имя")
+          input(type="text" placeholder="Телефон")
+          button Забронировать

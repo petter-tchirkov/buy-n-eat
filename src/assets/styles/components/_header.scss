@@ -1,0 +1,82 @@
+.header{
+  padding-top: 35px;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    display: block;
+    top: 0;
+    z-index: -1;
+    box-shadow: 0 5px 9px 1px rgba(27, 27, 27, 0.37);
+    background-color: #4a1e5a;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  *{
+    color: $white;
+  }
+  &--opening{
+    *{
+      text-align: right;
+    }
+    p{
+      @include adaptive-font(17,12);
+      font-family: 'Averta-SemiBold', sans-serif;
+      margin-bottom: 18px;
+      @include tablets{
+       text-align: center;
+      }
+    }
+    h1{
+      @include adaptive-font(33,24);
+      font-family: 'Averta-Bold', sans-serif;
+      margin-bottom: 11px;
+      span{
+        font-family: 'Averta-Bold', sans-serif;
+        color: #c28bd5;
+      }
+      @include tablets{
+        text-align: center;
+       }
+    }
+    .prescription{
+      font-size: 37px;
+      color: #c28bd5;
+      text-transform: capitalize;
+    }
+  }
+  &--logo{
+    img{
+      max-width: 312px;
+      @include tablets{
+        max-width: 156px;
+      }
+      @include phones{
+        max-width: 80px;
+       }
+    }
+  }
+  .contacts{
+    *{
+      text-align: right;
+    }
+    &--list{
+
+    }
+    &--item{
+      font-size: 15px;
+      font-family: 'Averta-Regular', sans-serif;
+      margin-bottom: 18px;
+      img{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        fill: $white;
+      }
+    }
+  }
+}
