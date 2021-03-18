@@ -590,6 +590,9 @@
     padding: 0 100px;
     position: relative;
     z-index: 3;
+    @include phones{
+      padding: 0;
+    }
   }
   &--btn{
     border-radius: 30px;
@@ -661,7 +664,7 @@
     }
     .where{
       margin-bottom: 21px;
-      @include adaptive-font(56,16);
+      @include adaptive-font(34,16);
       @include tablets{
         margin-bottom: 0;
       }
@@ -680,7 +683,7 @@
       }
     }
     .later{
-      @include adaptive-font(56,24);
+      @include adaptive-font(34,16);
       @include tablets{
         margin-bottom: 10px;
       }
