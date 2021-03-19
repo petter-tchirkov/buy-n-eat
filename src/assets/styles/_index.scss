@@ -494,6 +494,7 @@
   &--photo{
     position: relative;
     margin-right: 70px;
+    z-index: 2;
     @include tablets{
       display: flex;
       justify-content: center;
