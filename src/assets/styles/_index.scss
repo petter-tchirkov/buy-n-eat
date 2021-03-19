@@ -86,16 +86,15 @@
 .features{
   position: relative;
   margin-bottom: 92px;
-  top: -18%;
   z-index: 1;
-  padding-bottom: 79px;
+  padding-bottom: 133px;
   &:after{
     content: '';
     position: absolute;
     width: 200%;
     height: 100%;
     display: block;
-    top: 0;
+    top: -8%;
     left: -50%;
     z-index: -1;
     background-color: #612e73;
@@ -111,7 +110,6 @@
 
   &--container{
     padding-left: 64px;
-    padding-top: 105px;
     position: relative;
     @include tablets{
       padding-left: 15px;
@@ -615,8 +613,11 @@
     background-image: url('/assets/images/activate-bg.png');
     background-position: center;
     border-radius: 50%;
+    @include phones{
+    }
     @include tablets{
       border-radius: 0;
+      height: 100%;
     }
   }
   &--title{
