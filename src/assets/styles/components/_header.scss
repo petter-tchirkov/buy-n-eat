@@ -40,6 +40,9 @@
   position: absolute;
   width: 100%;
   z-index: 3;
+  @include tablets{
+    padding-top: 0;
+  }
   &::after{
     content: '';
     position: absolute;
@@ -53,8 +56,11 @@
     border-radius: 100%;
     background-color: #612e73;
     background-image: url('/assets/images/header-bg.png');
+    @include tablets{
+      height: 415px;
+    }
     @include phones{
-      height: 400px;
+      height: 270px;
     }
   }
   *{
@@ -103,6 +109,9 @@
   .contacts{
     *{
       text-align: right;
+      @include laptops{
+        text-align: left;
+      }
     }
     &--list{
 
