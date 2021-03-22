@@ -25,17 +25,17 @@ body{
   
 }
 .wrapper{
-  background-image: url('/assets/images/products.png');
-  background-color: red;
   position: relative;
   height: 100%;
   &:after{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: calc(24px + 100% + 30px);
+    height: 5622px;
+    top: 0;
+    left: 0;
     content: '';
     background: url('/assets/images/products.png') center center no-repeat;
-    background-size: cover;
+    background-size: contain;
     z-index: 10;
   }
 }

@@ -1,4 +1,6 @@
-
+.wrapper{
+  position: relative;
+}
 
 .main{
   background: url('/assets/images/main-bg.png') center center no-repeat;
@@ -116,6 +118,13 @@
     @include tablets{
       height: 112%;
     }
+    @include phones{
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 0;
+      height: 100%;
+    }
   }
   @include laptops{
     margin-bottom: 50px;
@@ -126,6 +135,7 @@
   }
   @include phones{
     padding-bottom: 0;
+    margin-bottom: 20px;
   }
 
   &--container{
@@ -910,6 +920,9 @@
     font-family: 'Averta-Black', sans-serif;
     margin-bottom: 50px;
     text-align: center;
+    @include phones{
+      padding: 0 30px;
+    }
   }
   &--form{
     display: flex;
